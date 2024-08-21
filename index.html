@@ -714,6 +714,8 @@
             background-size: 100%;
             background-repeat: no-repeat;
             margin-top: 10px;
+            margin-left: 2px;
+            margin-right: 2px;
         }
         .no-card-theme .deco-card {
             border: 2px solid rgb(30, 31, 34);
@@ -1112,6 +1114,10 @@
             height: 50px;
         }
 
+        .old-ui-tab, .home-tab {
+            display: none;
+        }
+
 
         .padding1 {
             padding: 1em;
@@ -1250,135 +1256,28 @@
 
             <div class="in-shop" id="items">
                 <div class="decorow decorow">
-                    <div class="deco-card decos" style="
-                    --deco-icon-false: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/ShopArchives.png');
-                    --deco-icon-true: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/ShopArchives.png');">
-                        <img class="decoimage">
-                        <div class="content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">By DTACat & Trell</a>
-                                <h1 class="sillywords">Shop Archives</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Your one stop place for all old and new Discord Collectibles.</a>
-                                </div>
-                                <h1 class="sillywords fade" style="opacity: 0;">US$12.99 - US$9.99</h1>
-                                <div class="button-holder">
-                                    <button class="cardbutton" onclick="location.href='main';">Open</button>
+                    <template data-mains-template>
+                        <div class="deco-card decos" data-mains-button>
+                            <div class="exclusive-tag hidden" style="width: 50px;">
+                                <a class="sillywords">NEW</a>
+                            </div>
+                            <img class="decoimage" data-mains-img>
+                            <div class="content-holder">
+                                <div class="card-content">
+                                    <a class="sillywords sku" data-mains-credits></a>
+                                    <h1 class="sillywords" data-mains-title></h1>
+                                    <div class="description-holder">
+                                        <a class="sillywords fade" data-mains-desc></a>
+                                    </div>
+                                    <h1 class="sillywords fade" style="opacity: 0;">a</h1>
+                                    <div class="button-holder">
+                                        <button class="cardbutton" data-mains-button1>Open</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="bundle-card bundle" style="
-                    --deco-icon-false: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/ProfilesPlus.png');
-                    --deco-icon-true: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/ProfilesPlus.png');
-                    --effect-thumbnail: url('https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/bopl-battle/effects/arrow-rain/1/thumbnail.png');
-                    --effect-intro: url('https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/bopl-battle/effects/arrow-rain/2/intro.png');">
-                        <img class="bundle-effectimage">
-                        <img class="bundle-decoimage">
-                        <div class="bundle-content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">By DTACat & Trell</a>
-                                <h1 class="sillywords">Profiles Plus</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Makes your Discord profile look 100 times better.</a>
-                                </div>
-                                <h1 class="sillywords fade" style="opacity: 0;">US$10.99 - US$8.99</h1>
-                                <h1 class="sillywords bundle-discount fade closed" style="opacity: 0;">(-8%) - (-24%)</h1>
-                                <div class="button-holder">
-                                    <button class="cardbutton" onclick="location.href='https://github.com/DTACat/Discord-Profiles-Plus';">Open</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deco-card decos unreleased-card" style="
-                    --deco-icon-false: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');
-                    --deco-icon-true: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');">
-                        <img class="decoimage">
-                        <div class="content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">By DTACat & Trell</a>
-                                <h1 class="sillywords">Blog</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Your one stop place for all old and new Discord Collectibles</a>
-                                </div>
-                                <h1 class="sillywords fade" style="opacity: 0;">US$12.99 - US$9.99</h1>
-                                <div class="button-holder">
-                                    <button class="cardbutton" onclick="location.href='blog';">Open</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deco-card decos unreleased-card" style="
-                    --deco-icon-false: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');
-                    --deco-icon-true: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');">
-                        <img class="decoimage">
-                        <div class="content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">By DTACat</a>
-                                <h1 class="sillywords">Color Logs</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Your one stop place for all old and new Discord Collectibles</a>
-                                </div>
-                                <h1 class="sillywords fade" style="opacity: 0;">US$12.99 - US$9.99</h1>
-                                <div class="button-holder">
-                                    <button class="cardbutton" onclick="location.href='colours';">Open</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deco-card decos unreleased-card" style="
-                    --deco-icon-false: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');
-                    --deco-icon-true: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');">
-                        <img class="decoimage">
-                        <div class="content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">By DTACat</a>
-                                <h1 class="sillywords">Dynamic Banners</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Your one stop place for all old and new Discord Collectibles</a>
-                                </div>
-                                <h1 class="sillywords fade" style="opacity: 0;">US$12.99 - US$9.99</h1>
-                                <div class="button-holder">
-                                    <button class="cardbutton" onclick="location.href='dynamic-banners';">Open</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deco-card decos unreleased-card" style="
-                    --deco-icon-false: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');
-                    --deco-icon-true: url('https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/shopuhoh.png');">
-                        <img class="decoimage">
-                        <div class="content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">By Trell</a>
-                                <h1 class="sillywords">Guides</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Your one stop place for all old and new Discord Collectibles</a>
-                                </div>
-                                <h1 class="sillywords fade" style="opacity: 0;">US$12.99 - US$9.99</h1>
-                                <div class="button-holder">
-                                    <button class="cardbutton" onclick="location.href='guides';">Open</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="deco-card decos" style="
-                    --deco-icon-false: url('https://cdn.discordapp.com/assets/server_products/storefront/question-mark.png');
-                    --deco-icon-true: url('https://cdn.discordapp.com/assets/server_products/storefront/question-mark.gif');">
-                        <img class="decoimage">
-                        <div class="content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">Coming Soon...</a>
-                                <h1 class="sillywords">Coming Soon...</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Our team is working hard to bring you the best tools for Collectibles.</a>
-                                </div>
-                                <h1 class="sillywords fade" style="opacity: 0;">US$12.99 - US$9.99</h1>
-                                <div class="button-holder">
-                                    <button class="cardbutton cardbutton-locked">Coming Soon...</button>
-                                </div>
-                            </div>
-                        </div>
+                    </template>
+                    <div data-mains-tabs>
                     </div>
 
                 </div>
@@ -1390,6 +1289,50 @@
     </div>
 
     <script>
+
+const mainsTab = document.querySelector("[data-mains-template]");
+const mainsTabsHolder = document.querySelector("[data-mains-tabs]");
+
+fetch('https://raw.githubusercontent.com/Yappering/api/main/v1/main-tabs')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(user => {
+            const card = mainsTab.content.cloneNode(true).children[0];
+            const mainstitle = card.querySelector("[data-mains-title]");
+            const mainsButton = card;  // Corrected the selection of the button element
+            const mainscredits = card.querySelector("[data-mains-credits]");
+            const mainsdesc = card.querySelector("[data-mains-desc]");
+            const mainsButton1 = card.querySelector("[data-mains-button1]");
+
+            mainstitle.textContent = user.title;
+
+            mainscredits.textContent = user.credits;
+
+            mainsdesc.textContent = user.desc;
+
+            mainsButton.classList.add(user.class);
+
+            const userImage = card.querySelector("[data-mains-img]");
+            userImage.src = user.image;
+            userImage.alt = user.title;
+
+            mainsButton1.onclick = function() {
+                window.location.href = user.url2;
+            };
+
+            if (user.isNew === "true") {
+                card.querySelector(".exclusive-tag").style.display = 'block';
+            }
+
+            mainsTabsHolder.append(card);
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching the API:', error);
+        document.getElementById("loading-api-dm-mains").classList.add('hidden');
+        document.getElementById("mains-fetch-error").classList.remove('hidden');
+    });
+
 
         document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
             const inputField = copyLinkParent.querySelector(".copy-pp");
